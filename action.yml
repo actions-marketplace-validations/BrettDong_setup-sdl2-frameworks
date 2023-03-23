@@ -1,7 +1,11 @@
 name: 'Setup SDL2 frameworks'
-description: 'Install SDL2 frameworks in macOS GitHub Actions runners'
+description: 'Install SDL2 frameworks on macOS GitHub Actions runners'
 author: 'BrettDong'
 inputs:
+  token:
+    description: 'Github token for retrieving information on SDL2 releases via GitHub API'
+    required: false
+    default: ${{ github.token }}
   dest:
     description: 'Installation destination'
     required: false
@@ -9,7 +13,7 @@ inputs:
   sdl2:
     description: 'SDL2 version'
     required: false
-    default: 'none'
+    default: 'latest'
   sdl2-ttf:
     description: 'SDL2-ttf version'
     required: false
