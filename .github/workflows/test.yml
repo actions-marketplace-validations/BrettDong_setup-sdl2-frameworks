@@ -26,18 +26,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Setup SDL2 frameworks
-        id: sdl2
         uses: ./
         with:
           sdl2: latest
           sdl2-ttf: latest
           sdl2-image: latest
           sdl2-mixer: latest
-      - name: Upload temp working directory if failed
-        uses: actions/upload-artifact@v3
-        if: ${{ failure() && steps.sdl2.conclusion == 'failure' }}
-        with:
-          name: temp
-          path: '/Users/runner/work/_temp'
+          sdl2-net: latest
       - name: Inspect local Framework directory
         run: 'find ~/Library/Frameworks'

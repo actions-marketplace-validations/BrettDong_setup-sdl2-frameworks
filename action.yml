@@ -26,6 +26,10 @@ inputs:
     description: 'SDL2-mixer version'
     required: false
     default: 'none'
+  sdl2-net:
+    description: 'SDL2-net version'
+    required: false
+    default: 'none'
 runs:
   using: 'node16'
   main: 'dist/setup/index.js'
