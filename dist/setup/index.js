@@ -13559,6 +13559,11 @@ const sdl2Components = [
         name: 'sdl2-mixer',
         repo: 'SDL_mixer',
         framework: 'SDL2_mixer.framework'
+    },
+    {
+        name: 'sdl2-net',
+        repo: 'SDL_net',
+        framework: 'SDL2_net.framework'
     }
 ];
 function findDmgAsset(version, assets) {

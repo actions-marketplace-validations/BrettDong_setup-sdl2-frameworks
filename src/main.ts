@@ -32,6 +32,11 @@ const sdl2Components: SDL2Component[] = [
     name: 'sdl2-mixer',
     repo: 'SDL_mixer',
     framework: 'SDL2_mixer.framework'
+  },
+  {
+    name: 'sdl2-net',
+    repo: 'SDL_net',
+    framework: 'SDL2_net.framework'
   }
 ]
 
