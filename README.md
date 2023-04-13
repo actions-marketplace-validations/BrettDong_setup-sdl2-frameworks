@@ -27,11 +27,11 @@ The above configuration will install the specified SDL2 frameworks to the defaul
 │   ├── SDL2 -> Versions/Current/SDL2
 │   └── Versions
 │       ├── ...
-└── SDL2_ttf.framework    // Latest
-|   ├── Headers -> Versions/Current/Headers
-|   ├── Resources -> Versions/Current/Resources
-|   ├── SDL2_ttf -> Versions/Current/SDL2_ttf
-|   └── Versions
+├── SDL2_ttf.framework    // Latest
+│   ├── Headers -> Versions/Current/Headers
+│   ├── Resources -> Versions/Current/Resources
+│   ├── SDL2_ttf -> Versions/Current/SDL2_ttf
+│   └── Versions
 |       ├── ...
 ├── SDL2_image.framework  // 2.6.3
 │   ├── Headers -> Versions/Current/Headers
