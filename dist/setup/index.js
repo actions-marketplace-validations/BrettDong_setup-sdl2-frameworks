@@ -34531,6 +34531,9 @@ function getSpecifiedRelease(component, version) {
 function getRelease(component, version) {
     return __awaiter(this, void 0, void 0, function* () {
         if (version === 'latest') {
+            if (component.name === 'sdl2') {
+                return getSpecifiedRelease(component, '2.30.11');
+            }
             return yield getLatestRelease(component);
         }
         else {

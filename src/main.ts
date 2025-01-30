@@ -102,6 +102,9 @@ async function getRelease(
   version: string
 ): Promise<Release> {
   if (version === 'latest') {
+    if (component.name === 'sdl2') {
+      return getSpecifiedRelease(component, '2.30.11');
+    }
     return await getLatestRelease(component)
   } else {
     return await getSpecifiedRelease(component, version)
