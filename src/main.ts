@@ -104,6 +104,8 @@ async function getRelease(
   if (version === 'latest') {
     if (component.name === 'sdl2') {
       return getSpecifiedRelease(component, '2.30.11');
+    } else if (component.name === 'sdl2-image') {
+      return getSpecifiedRelease(component, '2.8.4');
     }
     return await getLatestRelease(component)
   } else {
