@@ -4,7 +4,7 @@ import * as io from '@actions/io'
 import * as tc from '@actions/tool-cache'
 import * as dmg from 'dmg'
 import path from 'path'
-import {promisify} from 'util'
+import { promisify } from 'util'
 
 interface SDL2Component {
   name: string
@@ -104,6 +104,8 @@ async function getRelease(
   if (version === 'latest') {
     if (component.name === 'sdl2') {
       return getSpecifiedRelease(component, '2.30.11');
+    } else if (component.name === 'sdl2-ttf') {
+      return getSpecifiedRelease(component, '2.24.0');
     } else if (component.name === 'sdl2-image') {
       return getSpecifiedRelease(component, '2.8.4');
     }

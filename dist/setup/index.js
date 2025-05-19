@@ -33949,6 +33949,9 @@ function getRelease(component, version) {
             if (component.name === 'sdl2') {
                 return getSpecifiedRelease(component, '2.30.11');
             }
+            else if (component.name === 'sdl2-ttf') {
+                return getSpecifiedRelease(component, '2.24.0');
+            }
             else if (component.name === 'sdl2-image') {
                 return getSpecifiedRelease(component, '2.8.4');
             }
