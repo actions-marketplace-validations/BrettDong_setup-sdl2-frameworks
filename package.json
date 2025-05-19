@@ -48,6 +48,6 @@
     "prettier": "^3.5.3",
     "stylelint-prettier": "^5.0.3",
     "ts-jest": "^29.2.5",
-    "typescript": "^5.7.3"
+    "typescript": "^5.8.3"
   }
 }
